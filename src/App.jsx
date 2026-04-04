@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo } from 'react';
-import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useLocation, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ThemeProvider } from './context/ThemeContext';
 import { GameProvider } from './context/GameContext';
@@ -12,31 +12,28 @@ import Rules from './pages/Rules';
 function LangLayout() {
   const { lang } = useParams();
   const location = useLocation();
-  const navigate = useNavigate();
   const { i18n } = useTranslation();
+
   const safeLang = normalizeLang(lang);
 
   useEffect(() => {
-    if (lang && safeLang !== lang) {
-      navigate(`/${defaultLang}${getPathWithoutLang(location.pathname)}`, { replace: true });
-      return;
-    }
     if (i18n.language !== safeLang) {
       i18n.changeLanguage(safeLang);
     }
     document.documentElement.lang = safeLang;
     applySeo(safeLang, location.pathname);
-  }, [i18n, lang, location.pathname, navigate, safeLang]);
+  }, [i18n, location.pathname, safeLang]);
+
+  const subPath = getPathWithoutLang(location.pathname);
+
+  let page = <Home />;
+  if (subPath === '/game') page = <Game />;
+  else if (subPath === '/rules') page = <Rules />;
 
   return (
     <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="game" element={<Game />} />
-        <Route path="rules" element={<Rules />} />
-        <Route path="*" element={<Navigate to={`/${safeLang}`} replace />} />
-      </Routes>
+      {page}
     </div>
   );
 }
@@ -51,7 +48,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<LangLayout />} />
             <Route path=":lang/*" element={<LangLayout />} />
-            <Route path="*" element={<Navigate to={`/${defaultLang}`} replace />} />
+            <Route path="*" element={<LangLayout />} />
           </Routes>
         </BrowserRouter>
       </GameProvider>

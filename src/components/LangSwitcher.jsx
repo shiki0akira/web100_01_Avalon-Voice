@@ -16,7 +16,7 @@ export default function LangSwitcher() {
       onChange={(e) => {
         const nextLang = e.target.value;
         const rest = getPathWithoutLang(location.pathname);
-        navigate(`/${nextLang}${rest}`, { replace: true });
+        navigate(`${nextLang}${rest === '/' ? '' : rest}`, { replace: true });
       }}
     >
       {supportedLangs.map((code) => (
