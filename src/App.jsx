@@ -17,7 +17,7 @@ function LangLayout() {
   const safeLang = normalizeLang(lang);
 
   useEffect(() => {
-    if (safeLang !== lang) {
+    if (lang && safeLang !== lang) {
       navigate(`/${defaultLang}${getPathWithoutLang(location.pathname)}`, { replace: true });
       return;
     }
@@ -49,7 +49,7 @@ export default function App() {
       <GameProvider>
         <BrowserRouter basename={routerBasename}>
           <Routes>
-            <Route path="/" element={<Navigate to={`/${defaultLang}`} replace />} />
+            <Route path="/" element={<LangLayout />} />
             <Route path=":lang/*" element={<LangLayout />} />
             <Route path="*" element={<Navigate to={`/${defaultLang}`} replace />} />
           </Routes>
