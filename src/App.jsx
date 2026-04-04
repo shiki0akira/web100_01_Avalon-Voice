@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ThemeProvider } from './context/ThemeContext';
 import { GameProvider } from './context/GameContext';
-import { applySeo, defaultLang, getPathWithoutLang, normalizeLang, supportedLangs } from './i18n';
+import { applySeo, defaultLang, getAppBasePathFromPathname, getPathWithoutLang, normalizeLang } from './i18n';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Game from './pages/Game';
@@ -42,10 +42,12 @@ function LangLayout() {
 }
 
 export default function App() {
+  const routerBasename = useMemo(() => getAppBasePathFromPathname(window.location.pathname), []);
+
   return (
     <ThemeProvider>
       <GameProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={routerBasename}>
           <Routes>
             <Route path="/" element={<Navigate to={`/${defaultLang}`} replace />} />
             <Route path=":lang/*" element={<LangLayout />} />

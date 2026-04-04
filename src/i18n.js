@@ -79,12 +79,43 @@ export function normalizeLang(lang) {
   return supportedLangs.includes(lang) ? lang : defaultLang;
 }
 
+function getPathSegments(pathname) {
+  return String(pathname).split('/').filter(Boolean);
+}
+
+export function getAppBasePathFromPathname(pathname) {
+  const segments = getPathSegments(pathname);
+  const langIndex = segments.findIndex((seg) => supportedLangs.includes(seg));
+
+  // Example:
+  //  - /web100_01_Avalon-Voice/        -> /web100_01_Avalon-Voice
+  //  - /web100_01_Avalon-Voice/zh-TW -> /web100_01_Avalon-Voice
+  //  - /zh-TW                         -> ''
+  if (segments.length === 0) return '';
+
+  if (langIndex === -1) {
+    // No lang prefix in the URL; treat the first segment as the app base.
+    return `/${segments[0]}`;
+  }
+
+  if (langIndex === 0) return '';
+  return `/${segments.slice(0, langIndex).join('/')}`;
+}
+
 export function getPathWithoutLang(pathname) {
-  return pathname.replace(/^\/(?:zh-TW|en|de|fr|ja|ko|pl|ru|vi|pt|it|nl|cs|sv|th|id|es|zh-CN)(?=\/|$)/, '') || '/';
+  const segments = getPathSegments(pathname);
+  const langIndex = segments.findIndex((seg) => supportedLangs.includes(seg));
+
+  if (langIndex === -1) return '/';
+
+  const rest = segments.slice(langIndex + 1);
+  return rest.length ? `/${rest.join('/')}` : '/';
 }
 
 export function buildCanonical(lang, pathname) {
-  return `${window.location.origin}/${lang}${getPathWithoutLang(pathname)}`.replace(/\/$/, '');
+  const basePrefix = getAppBasePathFromPathname(pathname);
+  const pathWithoutLang = getPathWithoutLang(pathname);
+  return `${window.location.origin}${basePrefix}/${lang}${pathWithoutLang}`.replace(/\/$/, '');
 }
 
 export function applySeo(lang, pathname) {
@@ -126,13 +157,16 @@ export function applySeo(lang, pathname) {
   setMeta('og:type', 'website');
   setMeta('og:url', canonical);
 
+  const basePrefix = getAppBasePathFromPathname(pathname);
+  const pathWithoutLang = getPathWithoutLang(pathname);
+
   supportedLangs.forEach((code) => {
     ensureTag(`link[rel="alternate"][hreflang="${code}"]`, () => {
       const link = document.createElement('link');
       link.rel = 'alternate';
       link.hreflang = code;
       return link;
-    }).href = `${window.location.origin}/${code}${getPathWithoutLang(pathname)}`.replace(/\/$/, '');
+    }).href = `${window.location.origin}${basePrefix}/${code}${pathWithoutLang}`.replace(/\/$/, '');
   });
 }
 
