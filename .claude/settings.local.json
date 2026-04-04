@@ -1,31 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm install:*)",
-      "Bash(npm run:*)",
-      "Bash(npm test:*)",
-      "mcp__MiniMax_Speech_2_8_Turbo__minimax-speech-2_8-turbo",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/zh-TW/1.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489768097779480589da4f.mpga?k=2ef5249f\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/1.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489768219985907679115b.mpga?k=89bd6b0a\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/1.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/14897713263331505182049.mpga?k=b2fb0e10\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/2.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489771590279221082ce2b.mpga?k=e34f3fcd\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/3.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489771626201357534a856.mpga?k=b3b71b70\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/4.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489771666157726512e915.mpga?k=92a958e4\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/5.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/14897717061936676461af5.mpga?k=e19c61f0\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/6.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489771742128828822db5f.mpga?k=0928dc4c\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/8.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489772187931930353df12.mpga?k=75488fd4\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/9.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489772223382392796acac.mpga?k=2a7f6554\")",
-      "Bash(curl -L -o \"C:/Users/shiki/wen/web100_01_Avalon-Voice/public/audio/en/10.mp3\" \"https://storage.oaphub.ai/20/203411005923917824/1489772263849351674f887.mpga?k=ec82a9fa\")",
-      "Bash(node -e \"const i18n=require\\('i18next'\\);\")",
       "Bash(git add:*)",
-      "Bash(git commit:*)",
-      "Bash(git config:*)",
-      "Bash(git push:*)",
-      "WebFetch(domain:shiki0akira.github.io)",
-      "Bash(git checkout:*)",
-      "Bash(cp -f dist/index.html ./index.html)",
-      "Bash(cp -r dist/assets ./assets)",
-      "Bash(cp -r dist/audio ./audio)"
+      "Bash(git commit:*)"
     ]
   }
 }
