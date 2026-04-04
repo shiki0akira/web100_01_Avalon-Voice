@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Avalon-Underröstning",
+    "description": "Ställ in Avalon och starta den talade guiden.",
+    "ogTitle": "Avalon-Underröstning",
+    "ogDescription": "Ställ in Avalon och starta den talade guiden."
+  },
+  "nav": {
+    "title": "Avalon-Underröstning",
+    "rules": "Regler",
+    "dark": "Mörkt",
+    "light": "Ljust"
+  },
+  "home": {
+    "title": "Avalon-Underröstning",
+    "description": "Välj antal spelare och justera rollerna.",
+    "playerCount": "Spelare",
+    "recommendation": "Rekommenderad uppsättning",
+    "good": "Goda",
+    "evil": "Onda",
+    "roleConfig": "Rollkonfiguration",
+    "mismatch": "Rollantalet matchar inte rekommendationen.",
+    "start": "Starta spel"
+  },
+  "game": {
+    "title": "Röstguide",
+    "description": "Följ de talade instruktionerna.",
+    "speaking": "Röstguiden är redo.",
+    "unsupported": "Talsyntes finns inte i den här webbläsaren.",
+    "summary": "Nuvarande val"
+  },
+  "rules": {
+    "title": "Regler",
+    "description": "Avalon är ett spel med dolda roller."
+  },
+  "voice": {
+    "script": [
+      "Alla spelare, stäng ögonen.",
+      "Merlin, öppna ögonen. De onda spelarna utom Mordred, visa tummen upp.",
+      "De onda spelarna utom Oberon, öppna ögonen och identifiera varandra.",
+      "Percival, öppna ögonen. Merlin och Morgana, visa tummen upp.",
+      "Alla spelare, öppna ögonen."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassin",
+    "morgana": "Morgana"
+  }
+}

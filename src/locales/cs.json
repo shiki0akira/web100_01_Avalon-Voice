@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Narace Avalonu",
+    "description": "Nastavte Avalon a spusťte hlasového průvodce.",
+    "ogTitle": "Narace Avalonu",
+    "ogDescription": "Nastavte Avalon a spusťte hlasového průvodce."
+  },
+  "nav": {
+    "title": "Narace Avalonu",
+    "rules": "Pravidla",
+    "dark": "Tmavý",
+    "light": "Světlý"
+  },
+  "home": {
+    "title": "Narace Avalonu",
+    "description": "Vyberte počet hráčů a upravte role.",
+    "playerCount": "Hráči",
+    "recommendation": "Doporučené složení",
+    "good": "Dobří",
+    "evil": "Zlí",
+    "roleConfig": "Nastavení rolí",
+    "mismatch": "Počet rolí neodpovídá doporučení.",
+    "start": "Spustit hru"
+  },
+  "game": {
+    "title": "Hlasový průvodce",
+    "description": "Postupujte podle hlasových pokynů.",
+    "speaking": "Hlasový průvodce je připraven.",
+    "unsupported": "Syntéza řeči není k dispozici.",
+    "summary": "Aktuální výběr"
+  },
+  "rules": {
+    "title": "Pravidla",
+    "description": "Avalon je hra se skrytými rolemi."
+  },
+  "voice": {
+    "script": [
+      "Všichni hráči, zavřete oči.",
+      "Merline, otevři oči. Zlí hráči kromě Mordreda, zvedněte palec.",
+      "Zlí hráči kromě Oberona, otevřete oči a poznejte se navzájem.",
+      "Percivale, otevři oči. Merlin a Morgana, zvedněte palec.",
+      "Všichni hráči, otevřete oči."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassin",
+    "morgana": "Morgana"
+  }
+}

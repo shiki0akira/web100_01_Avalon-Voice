@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Avalon-Vertelling",
+    "description": "Stel Avalon in en start de gesproken gids.",
+    "ogTitle": "Avalon-Vertelling",
+    "ogDescription": "Stel Avalon in en start de gesproken gids."
+  },
+  "nav": {
+    "title": "Avalon-Vertelling",
+    "rules": "Regels",
+    "dark": "Donker",
+    "light": "Licht"
+  },
+  "home": {
+    "title": "Avalon-Vertelling",
+    "description": "Kies het aantal spelers en pas de rollen aan.",
+    "playerCount": "Spelers",
+    "recommendation": "Aanbevolen opstelling",
+    "good": "Goed",
+    "evil": "Slecht",
+    "roleConfig": "Rollenconfiguratie",
+    "mismatch": "Het aantal rollen komt niet overeen met de aanbeveling.",
+    "start": "Start spel"
+  },
+  "game": {
+    "title": "Spraakgids",
+    "description": "Volg de gesproken instructies.",
+    "speaking": "De spraakgids is klaar.",
+    "unsupported": "Spraaksynthese is niet beschikbaar.",
+    "summary": "Huidige selectie"
+  },
+  "rules": {
+    "title": "Regels",
+    "description": "Avalon is een spel met verborgen rollen."
+  },
+  "voice": {
+    "script": [
+      "Alle spelers, doe je ogen dicht.",
+      "Merlijn, doe je ogen open. De slechte spelers behalve Mordred, steek je duim omhoog.",
+      "De slechte spelers behalve Oberon, doe je ogen open en herken elkaar.",
+      "Percival, doe je ogen open. Merlijn en Morgana, steek je duim omhoog.",
+      "Alle spelers, doe je ogen open."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlijn",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassin",
+    "morgana": "Morgana"
+  }
+}

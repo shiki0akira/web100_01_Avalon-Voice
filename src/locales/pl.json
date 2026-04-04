@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Narracja Avalonu",
+    "description": "Konfiguruj Avalona i uruchom prowadzenie głosowe.",
+    "ogTitle": "Narracja Avalonu",
+    "ogDescription": "Konfiguruj Avalona i uruchom prowadzenie głosowe."
+  },
+  "nav": {
+    "title": "Narracja Avalonu",
+    "rules": "Zasady",
+    "dark": "Ciemny",
+    "light": "Jasny"
+  },
+  "home": {
+    "title": "Narracja Avalonu",
+    "description": "Wybierz liczbę graczy i dostosuj role.",
+    "playerCount": "Gracze",
+    "recommendation": "Zalecany układ",
+    "good": "Dobrzy",
+    "evil": "Źli",
+    "roleConfig": "Konfiguracja ról",
+    "mismatch": "Liczba ról nie zgadza się z zaleceniem.",
+    "start": "Start gry"
+  },
+  "game": {
+    "title": "Przewodnik głosowy",
+    "description": "Podążaj za instrukcjami głosowymi.",
+    "speaking": "Przewodnik głosowy jest gotowy.",
+    "unsupported": "Synteza mowy jest niedostępna.",
+    "summary": "Aktualny wybór"
+  },
+  "rules": {
+    "title": "Zasady",
+    "description": "Avalon to gra z ukrytymi rolami."
+  },
+  "voice": {
+    "script": [
+      "Wszyscy gracze, zamknijcie oczy.",
+      "Merlinie, otwórz oczy. Zli gracze z wyjątkiem Mordreda, pokażcie kciuk w górę.",
+      "Zli gracze z wyjątkiem Oberona, otwórzcie oczy i rozpoznajcie sojuszników.",
+      "Percivalu, otwórz oczy. Merlin i Morgana, pokażcie kciuk w górę.",
+      "Wszyscy, otwórzcie oczy."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Asasyn",
+    "morgana": "Morgana"
+  }
+}

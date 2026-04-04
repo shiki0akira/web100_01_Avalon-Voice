@@ -1,0 +1,47 @@
+{
+  "seo": {
+    "title": "Trợ lý Avalon",
+    "description": "Thiết lập Avalon và bắt đầu hướng dẫn bằng giọng nói.",
+    "ogTitle": "Trợ lý Avalon",
+    "ogDescription": "Thiết lập Avalon và bắt đầu hướng dẫn bằng giọng nói."
+  },
+  "nav": {
+    "title": "Trợ lý Avalon",
+    "rules": "Luật chơi",
+    "dark": "Tối",
+    "light": "Sáng"
+  },
+  "home": {
+    "title": "Trợ lý Avalon",
+    "description": "Chọn số người chơi và điều chỉnh vai trò.",
+    "playerCount": "Người chơi",
+    "recommendation": "Thiết lập đề xuất",
+    "good": "Phe tốt",
+    "evil": "Phe xấu",
+    "roleConfig": "Cấu hình vai trò",
+    "mismatch": "Số vai trò không khớp với gợi ý.",
+    "start": "Bắt đầu trò chơi"
+  },
+  "game": {
+    "title": "Hướng dẫn thoại",
+    "description": "Làm theo các hướng dẫn bằng giọng nói.",
+    "speaking": "Hướng dẫn thoại đã sẵn sàng.",
+    "unsupported": "Trình duyệt này không hỗ trợ tổng hợp giọng nói.",
+    "summary": "Lựa chọn hiện tại"
+  },
+  "rules": {
+    "title": "Luật chơi",
+    "description": "Avalon là trò chơi suy luận vai trò ẩn."
+  },
+  "voice": {
+    "intro": "Chào mừng đến với Avalon."
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Sát thủ",
+    "morgana": "Morgana"
+  }
+}

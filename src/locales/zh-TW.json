@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "阿瓦隆語音",
+    "description": "建立阿瓦隆開局、查看規則，並以語音導場開始遊戲。",
+    "ogTitle": "阿瓦隆語音",
+    "ogDescription": "建立阿瓦隆開局、查看規則，並以語音導場開始遊戲。"
+  },
+  "nav": {
+    "title": "阿瓦隆語音",
+    "rules": "規則",
+    "dark": "深色",
+    "light": "淺色"
+  },
+  "home": {
+    "title": "阿瓦隆語音",
+    "description": "選擇人數、查看建議配置，並在開始前手動調整角色。",
+    "playerCount": "玩家人數",
+    "recommendation": "建議配置",
+    "good": "好人",
+    "evil": "壞人",
+    "roleConfig": "角色配置",
+    "mismatch": "目前角色數量與建議配置不一致。",
+    "start": "開始遊戲"
+  },
+  "game": {
+    "title": "語音導場",
+    "description": "請依照語音指示完成角色分配，並在需要時交接裝置。",
+    "speaking": "語音導場已準備完成。",
+    "unsupported": "此瀏覽器不支援語音合成。",
+    "summary": "目前選擇"
+  },
+  "rules": {
+    "title": "規則說明",
+    "description": "阿瓦隆是一款隱藏身份推理遊戲，好人要完成任務，壞人要阻止他們。"
+  },
+  "voice": {
+    "script": [
+      "所有玩家請閉上眼睛。",
+      "梅林睜眼。除了莫德雷德之外，所有邪惡方豎起拇指。",
+      "除了奧伯倫之外，所有邪惡方睜眼辨認同伴。",
+      "派希維爾睜眼。梅林和莫甘娜豎起拇指。",
+      "所有人睜眼。"
+    ],
+    "speed": "語速",
+    "pause": "暫停",
+    "resume": "繼續",
+    "restart": "重新開始"
+  },
+  "roles": {
+    "merlin": "梅林",
+    "percival": "派希維爾",
+    "oberon": "奧伯倫",
+    "mordred": "莫德雷德",
+    "assassin": "刺客",
+    "morgana": "莫甘娜"
+  }
+}

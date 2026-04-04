@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Narration Avalon",
+    "description": "Configurez Avalon et lancez une introduction vocale.",
+    "ogTitle": "Narration Avalon",
+    "ogDescription": "Configurez Avalon et lancez une introduction vocale."
+  },
+  "nav": {
+    "title": "Narration Avalon",
+    "rules": "Règles",
+    "dark": "Sombre",
+    "light": "Clair"
+  },
+  "home": {
+    "title": "Narration Avalon",
+    "description": "Choisissez le nombre de joueurs et ajustez les rôles.",
+    "playerCount": "Joueurs",
+    "recommendation": "Configuration recommandée",
+    "good": "Bon",
+    "evil": "Mauvais",
+    "roleConfig": "Configuration des rôles",
+    "mismatch": "Le nombre de rôles ne correspond pas.",
+    "start": "Démarrer"
+  },
+  "game": {
+    "title": "Guide vocal",
+    "description": "Suivez les instructions vocales.",
+    "speaking": "Le guide vocal est prêt.",
+    "unsupported": "La synthèse vocale n'est pas disponible.",
+    "summary": "Sélection actuelle"
+  },
+  "rules": {
+    "title": "Règles",
+    "description": "Avalon est un jeu à rôles cachés."
+  },
+  "voice": {
+    "script": [
+      "Tous les joueurs, fermez les yeux.",
+      "Merlin, ouvrez les yeux. Les forces du mal sauf Mordred, montrez le pouce levé.",
+      "Les forces du mal sauf Oberon, ouvrez les yeux et identifiez-vous.",
+      "Percival, ouvrez les yeux. Merlin et Morgane, montrez le pouce levé.",
+      "Tout le monde, ouvrez les yeux."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassin",
+    "morgana": "Morgane"
+  }
+}

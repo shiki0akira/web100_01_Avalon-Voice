@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Narasi Avalon",
+    "description": "Atur Avalon dan mulai panduan suara.",
+    "ogTitle": "Narasi Avalon",
+    "ogDescription": "Atur Avalon dan mulai panduan suara."
+  },
+  "nav": {
+    "title": "Narasi Avalon",
+    "rules": "Aturan",
+    "dark": "Gelap",
+    "light": "Terang"
+  },
+  "home": {
+    "title": "Narasi Avalon",
+    "description": "Pilih jumlah pemain dan sesuaikan peran.",
+    "playerCount": "Pemain",
+    "recommendation": "Susunan yang disarankan",
+    "good": "Baik",
+    "evil": "Jahat",
+    "roleConfig": "Konfigurasi peran",
+    "mismatch": "Jumlah peran tidak sesuai dengan rekomendasi.",
+    "start": "Mulai permainan"
+  },
+  "game": {
+    "title": "Panduan suara",
+    "description": "Ikuti instruksi suara.",
+    "speaking": "Panduan suara siap.",
+    "unsupported": "Sintesis suara tidak tersedia.",
+    "summary": "Pilihan saat ini"
+  },
+  "rules": {
+    "title": "Aturan",
+    "description": "Avalon adalah permainan peran tersembunyi."
+  },
+  "voice": {
+    "script": [
+      "Semua pemain, tutup mata.",
+      "Merlin, buka mata. Pemain jahat kecuali Mordred, angkat jempol.",
+      "Pemain jahat kecuali Oberon, buka mata dan saling mengenali.",
+      "Percival, buka mata. Merlin dan Morgana, angkat jempol.",
+      "Semua pemain, buka mata."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Pembunuh",
+    "morgana": "Morgana"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "seo": {
+    "title": "Narrazione Avalon",
+    "description": "Configura Avalon e avvia la guida vocale.",
+    "ogTitle": "Narrazione Avalon",
+    "ogDescription": "Configura Avalon e avvia la guida vocale."
+  },
+  "nav": {
+    "title": "Narrazione Avalon",
+    "rules": "Regole",
+    "dark": "Scuro",
+    "light": "Chiaro"
+  },
+  "home": {
+    "title": "Narrazione Avalon",
+    "description": "Scegli il numero di giocatori e modifica i ruoli.",
+    "playerCount": "Giocatori",
+    "recommendation": "Configurazione consigliata",
+    "good": "Buoni",
+    "evil": "Cattivi",
+    "roleConfig": "Configurazione ruoli",
+    "mismatch": "Il numero dei ruoli non corrisponde al suggerimento.",
+    "start": "Avvia partita"
+  },
+  "game": {
+    "title": "Guida vocale",
+    "description": "Segui le istruzioni vocali.",
+    "speaking": "La guida vocale è pronta.",
+    "unsupported": "La sintesi vocale non è disponibile.",
+    "summary": "Selezione attuale"
+  },
+  "rules": {
+    "title": "Regole",
+    "description": "Avalon è un gioco di ruoli nascosti."
+  },
+  "voice": {
+    "script": [
+      "Tutti i giocatori, chiudete gli occhi.",
+      "Merlino, apri gli occhi. I giocatori del male, tranne Mordred, alzate il pollice.",
+      "I giocatori del male, tranne Oberon, aprite gli occhi e riconoscetevi.",
+      "Percival, apri gli occhi. Merlino e Morgana, alzate il pollice.",
+      "Tutti i giocatori, aprite gli occhi."
+    ]
+  },
+  "roles": {
+    "merlin": "Merlino",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassino",
+    "morgana": "Morgana"
+  }
+}

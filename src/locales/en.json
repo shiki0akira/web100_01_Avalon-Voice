@@ -1,0 +1,57 @@
+{
+  "seo": {
+    "title": "Avalon Voice",
+    "description": "Create Avalon game setups, read rules, and start a speech-guided game in this language.",
+    "ogTitle": "Avalon Voice",
+    "ogDescription": "Create Avalon game setups, read rules, and start a speech-guided game."
+  },
+  "nav": {
+    "title": "Avalon Voice",
+    "rules": "Rules",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "home": {
+    "title": "Avalon Voice",
+    "description": "Choose a player count, review the suggested roles, and adjust the setup before starting.",
+    "playerCount": "Players",
+    "recommendation": "Recommended setup",
+    "good": "Good",
+    "evil": "Evil",
+    "roleConfig": "Role configuration",
+    "mismatch": "Your role selection does not match the recommended count.",
+    "start": "Start game"
+  },
+  "game": {
+    "title": "Game guide",
+    "description": "Follow the spoken setup instructions and pass the device when needed.",
+    "speaking": "Speech guide is ready.",
+    "unsupported": "Speech synthesis is unavailable in this browser.",
+    "summary": "Current selection"
+  },
+  "rules": {
+    "title": "Rules",
+    "description": "Avalon is a hidden-role deduction game where good tries to complete quests and evil tries to stop them."
+  },
+  "voice": {
+    "script": [
+      "All players close your eyes.",
+      "Merlin, open your eyes. Evil players except Mordred, show a thumbs up.",
+      "Evil players except Oberon, open your eyes and identify one another.",
+      "Percival, open your eyes. Merlin and Morgana, show a thumbs up.",
+      "All players open your eyes."
+    ],
+    "speed": "Speed",
+    "pause": "Pause",
+    "resume": "Resume",
+    "restart": "Restart"
+  },
+  "roles": {
+    "merlin": "Merlin",
+    "percival": "Percival",
+    "oberon": "Oberon",
+    "mordred": "Mordred",
+    "assassin": "Assassin",
+    "morgana": "Morgana"
+  }
+}
