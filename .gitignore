@@ -1,2 +1,2 @@
-# Generated audio files
-public/audio/*
+node_modules/
+dist/
