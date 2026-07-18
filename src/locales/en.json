@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Avalon Voice",
-    "description": "Create Avalon game setups, read rules, and start a speech-guided game in this language.",
-    "ogTitle": "Avalon Voice",
-    "ogDescription": "Create Avalon game setups, read rules, and start a speech-guided game."
+    "title": "Avalon Voice Narrator | Online The Resistance: Avalon Host Script",
+    "description": "Avalon Voice reads the host narration out loud so no one has to memorize the script. Pick your player count and roles, then start an online Avalon game instantly.",
+    "ogTitle": "Avalon Voice Narrator - Auto Host Script for The Resistance: Avalon",
+    "ogDescription": "Set your player count and roles, and Avalon Voice narrates the host script for you from start to finish."
   },
   "nav": {
     "title": "Avalon Voice",
