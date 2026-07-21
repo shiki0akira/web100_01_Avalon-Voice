@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/avalon", "destination": "/avalon/index.html" },
+    { "source": "/avalon/:path*", "destination": "/avalon/index.html" }
+  ]
 }

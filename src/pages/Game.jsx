@@ -37,7 +37,7 @@ export default function Game() {
     if (!lang) return;
 
     let cancelled = false;
-    const probeSrc = `/audio/${lang}/1.mp3`;
+    const probeSrc = `${import.meta.env.BASE_URL}audio/${lang}/1.mp3`;
 
     const probe = new Audio(probeSrc);
     let finished = false;
@@ -72,19 +72,19 @@ export default function Game() {
     const includePercival = hasRole('percival');
 
     const steps = [
-      { src: `/audio/${lang}/1.mp3`, waitAfterMs: PAUSE_AFTER_MS },
-      { src: `/audio/${lang}/${oberonVariant}.mp3`, waitAfterMs: PAUSE_AFTER_MS },
-      { src: `/audio/${lang}/4.mp3`, waitAfterMs: PAUSE_AFTER_MS },
-      { src: `/audio/${lang}/${mordredVariant}.mp3`, waitAfterMs: PAUSE_AFTER_MS },
-      { src: `/audio/${lang}/7.mp3`, waitAfterMs: PAUSE_AFTER_MS },
+      { src: `${import.meta.env.BASE_URL}audio/${lang}/1.mp3`, waitAfterMs: PAUSE_AFTER_MS },
+      { src: `${import.meta.env.BASE_URL}audio/${lang}/${oberonVariant}.mp3`, waitAfterMs: PAUSE_AFTER_MS },
+      { src: `${import.meta.env.BASE_URL}audio/${lang}/4.mp3`, waitAfterMs: PAUSE_AFTER_MS },
+      { src: `${import.meta.env.BASE_URL}audio/${lang}/${mordredVariant}.mp3`, waitAfterMs: PAUSE_AFTER_MS },
+      { src: `${import.meta.env.BASE_URL}audio/${lang}/7.mp3`, waitAfterMs: PAUSE_AFTER_MS },
     ];
 
     if (includePercival) {
-      steps.push({ src: `/audio/${lang}/8.mp3`, waitAfterMs: PAUSE_AFTER_MS });
-      steps.push({ src: `/audio/${lang}/9.mp3`, waitAfterMs: 0 });
+      steps.push({ src: `${import.meta.env.BASE_URL}audio/${lang}/8.mp3`, waitAfterMs: PAUSE_AFTER_MS });
+      steps.push({ src: `${import.meta.env.BASE_URL}audio/${lang}/9.mp3`, waitAfterMs: 0 });
     }
 
-    steps.push({ src: `/audio/${lang}/10.mp3`, waitAfterMs: 0 });
+    steps.push({ src: `${import.meta.env.BASE_URL}audio/${lang}/10.mp3`, waitAfterMs: 0 });
 
     return { steps };
   }, [hasRole, lang]);
