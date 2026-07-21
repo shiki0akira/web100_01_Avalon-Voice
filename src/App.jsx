@@ -45,7 +45,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <GameProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/avalon">
           <Routes>
             <Route path="/" element={<Navigate to={`/${defaultLang}`} replace />} />
             <Route path=":lang/*" element={<LangLayout />} />
