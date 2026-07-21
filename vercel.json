@@ -1,7 +1,195 @@
 {
   "version": 2,
+  "redirects": [
+    {
+      "source": "/zh-TW",
+      "destination": "/avalon/zh-TW",
+      "permanent": true
+    },
+    {
+      "source": "/zh-TW/:path*",
+      "destination": "/avalon/zh-TW/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/avalon/en",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/avalon/en/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/de",
+      "destination": "/avalon/de",
+      "permanent": true
+    },
+    {
+      "source": "/de/:path*",
+      "destination": "/avalon/de/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/fr",
+      "destination": "/avalon/fr",
+      "permanent": true
+    },
+    {
+      "source": "/fr/:path*",
+      "destination": "/avalon/fr/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ja",
+      "destination": "/avalon/ja",
+      "permanent": true
+    },
+    {
+      "source": "/ja/:path*",
+      "destination": "/avalon/ja/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ko",
+      "destination": "/avalon/ko",
+      "permanent": true
+    },
+    {
+      "source": "/ko/:path*",
+      "destination": "/avalon/ko/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pl",
+      "destination": "/avalon/pl",
+      "permanent": true
+    },
+    {
+      "source": "/pl/:path*",
+      "destination": "/avalon/pl/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ru",
+      "destination": "/avalon/ru",
+      "permanent": true
+    },
+    {
+      "source": "/ru/:path*",
+      "destination": "/avalon/ru/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/vi",
+      "destination": "/avalon/vi",
+      "permanent": true
+    },
+    {
+      "source": "/vi/:path*",
+      "destination": "/avalon/vi/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pt",
+      "destination": "/avalon/pt",
+      "permanent": true
+    },
+    {
+      "source": "/pt/:path*",
+      "destination": "/avalon/pt/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/it",
+      "destination": "/avalon/it",
+      "permanent": true
+    },
+    {
+      "source": "/it/:path*",
+      "destination": "/avalon/it/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/nl",
+      "destination": "/avalon/nl",
+      "permanent": true
+    },
+    {
+      "source": "/nl/:path*",
+      "destination": "/avalon/nl/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/cs",
+      "destination": "/avalon/cs",
+      "permanent": true
+    },
+    {
+      "source": "/cs/:path*",
+      "destination": "/avalon/cs/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/sv",
+      "destination": "/avalon/sv",
+      "permanent": true
+    },
+    {
+      "source": "/sv/:path*",
+      "destination": "/avalon/sv/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/th",
+      "destination": "/avalon/th",
+      "permanent": true
+    },
+    {
+      "source": "/th/:path*",
+      "destination": "/avalon/th/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/id",
+      "destination": "/avalon/id",
+      "permanent": true
+    },
+    {
+      "source": "/id/:path*",
+      "destination": "/avalon/id/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es",
+      "destination": "/avalon/es",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/avalon/es/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh-CN",
+      "destination": "/avalon/zh-CN",
+      "permanent": true
+    },
+    {
+      "source": "/zh-CN/:path*",
+      "destination": "/avalon/zh-CN/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
-    { "source": "/avalon", "destination": "/avalon/index.html" },
-    { "source": "/avalon/:path*", "destination": "/avalon/index.html" }
+    {
+      "source": "/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/avalon/:path*",
+      "destination": "/avalon/index.html"
+    }
   ]
 }
