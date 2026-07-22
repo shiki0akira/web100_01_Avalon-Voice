@@ -376,6 +376,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/zh-TW/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/zh-TW/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -389,6 +393,10 @@
     },
     {
       "source": "/en/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/en/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -408,6 +416,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/de/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/de/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -421,6 +433,10 @@
     },
     {
       "source": "/fr/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/fr/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -440,6 +456,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/ja/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/ja/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -453,6 +473,10 @@
     },
     {
       "source": "/ko/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ko/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -472,6 +496,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/pl/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/pl/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -485,6 +513,10 @@
     },
     {
       "source": "/ru/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ru/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -504,6 +536,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/vi/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/vi/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -517,6 +553,10 @@
     },
     {
       "source": "/pt/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/pt/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -536,6 +576,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/it/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/it/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -549,6 +593,10 @@
     },
     {
       "source": "/nl/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/nl/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -568,6 +616,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/cs/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/cs/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -581,6 +633,10 @@
     },
     {
       "source": "/sv/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/sv/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -600,6 +656,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/th/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/th/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -613,6 +673,10 @@
     },
     {
       "source": "/id/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/id/avalon/",
       "destination": "/avalon/index.html"
     },
     {
@@ -632,6 +696,10 @@
       "destination": "/avalon/index.html"
     },
     {
+      "source": "/es/avalon/",
+      "destination": "/avalon/index.html"
+    },
+    {
       "source": "/es/avalon/:path*",
       "destination": "/avalon/index.html"
     },
@@ -645,6 +713,10 @@
     },
     {
       "source": "/zh-CN/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/zh-CN/avalon/",
       "destination": "/avalon/index.html"
     },
     {
