@@ -2,193 +2,653 @@
   "version": 2,
   "redirects": [
     {
-      "source": "/zh-TW",
-      "destination": "/avalon/zh-TW",
+      "source": "/zh-TW/game",
+      "destination": "/zh-TW/avalon/game",
       "permanent": true
     },
     {
-      "source": "/zh-TW/:path*",
-      "destination": "/avalon/zh-TW/:path*",
+      "source": "/zh-TW/rules",
+      "destination": "/zh-TW/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/en",
-      "destination": "/avalon/en",
+      "source": "/avalon/zh-TW",
+      "destination": "/zh-TW/avalon",
       "permanent": true
     },
     {
-      "source": "/en/:path*",
-      "destination": "/avalon/en/:path*",
+      "source": "/avalon/zh-TW/:path*",
+      "destination": "/zh-TW/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/de",
-      "destination": "/avalon/de",
+      "source": "/en/game",
+      "destination": "/en/avalon/game",
       "permanent": true
     },
     {
-      "source": "/de/:path*",
-      "destination": "/avalon/de/:path*",
+      "source": "/en/rules",
+      "destination": "/en/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/fr",
-      "destination": "/avalon/fr",
+      "source": "/avalon/en",
+      "destination": "/en/avalon",
       "permanent": true
     },
     {
-      "source": "/fr/:path*",
-      "destination": "/avalon/fr/:path*",
+      "source": "/avalon/en/:path*",
+      "destination": "/en/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/ja",
-      "destination": "/avalon/ja",
+      "source": "/de/game",
+      "destination": "/de/avalon/game",
       "permanent": true
     },
     {
-      "source": "/ja/:path*",
-      "destination": "/avalon/ja/:path*",
+      "source": "/de/rules",
+      "destination": "/de/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/ko",
-      "destination": "/avalon/ko",
+      "source": "/avalon/de",
+      "destination": "/de/avalon",
       "permanent": true
     },
     {
-      "source": "/ko/:path*",
-      "destination": "/avalon/ko/:path*",
+      "source": "/avalon/de/:path*",
+      "destination": "/de/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/pl",
-      "destination": "/avalon/pl",
+      "source": "/fr/game",
+      "destination": "/fr/avalon/game",
       "permanent": true
     },
     {
-      "source": "/pl/:path*",
-      "destination": "/avalon/pl/:path*",
+      "source": "/fr/rules",
+      "destination": "/fr/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/ru",
-      "destination": "/avalon/ru",
+      "source": "/avalon/fr",
+      "destination": "/fr/avalon",
       "permanent": true
     },
     {
-      "source": "/ru/:path*",
-      "destination": "/avalon/ru/:path*",
+      "source": "/avalon/fr/:path*",
+      "destination": "/fr/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/vi",
-      "destination": "/avalon/vi",
+      "source": "/ja/game",
+      "destination": "/ja/avalon/game",
       "permanent": true
     },
     {
-      "source": "/vi/:path*",
-      "destination": "/avalon/vi/:path*",
+      "source": "/ja/rules",
+      "destination": "/ja/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/pt",
-      "destination": "/avalon/pt",
+      "source": "/avalon/ja",
+      "destination": "/ja/avalon",
       "permanent": true
     },
     {
-      "source": "/pt/:path*",
-      "destination": "/avalon/pt/:path*",
+      "source": "/avalon/ja/:path*",
+      "destination": "/ja/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/it",
-      "destination": "/avalon/it",
+      "source": "/ko/game",
+      "destination": "/ko/avalon/game",
       "permanent": true
     },
     {
-      "source": "/it/:path*",
-      "destination": "/avalon/it/:path*",
+      "source": "/ko/rules",
+      "destination": "/ko/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/nl",
-      "destination": "/avalon/nl",
+      "source": "/avalon/ko",
+      "destination": "/ko/avalon",
       "permanent": true
     },
     {
-      "source": "/nl/:path*",
-      "destination": "/avalon/nl/:path*",
+      "source": "/avalon/ko/:path*",
+      "destination": "/ko/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/cs",
-      "destination": "/avalon/cs",
+      "source": "/pl/game",
+      "destination": "/pl/avalon/game",
       "permanent": true
     },
     {
-      "source": "/cs/:path*",
-      "destination": "/avalon/cs/:path*",
+      "source": "/pl/rules",
+      "destination": "/pl/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/sv",
-      "destination": "/avalon/sv",
+      "source": "/avalon/pl",
+      "destination": "/pl/avalon",
       "permanent": true
     },
     {
-      "source": "/sv/:path*",
-      "destination": "/avalon/sv/:path*",
+      "source": "/avalon/pl/:path*",
+      "destination": "/pl/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/th",
-      "destination": "/avalon/th",
+      "source": "/ru/game",
+      "destination": "/ru/avalon/game",
       "permanent": true
     },
     {
-      "source": "/th/:path*",
-      "destination": "/avalon/th/:path*",
+      "source": "/ru/rules",
+      "destination": "/ru/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/id",
-      "destination": "/avalon/id",
+      "source": "/avalon/ru",
+      "destination": "/ru/avalon",
       "permanent": true
     },
     {
-      "source": "/id/:path*",
-      "destination": "/avalon/id/:path*",
+      "source": "/avalon/ru/:path*",
+      "destination": "/ru/avalon/:path*",
       "permanent": true
     },
     {
-      "source": "/es",
-      "destination": "/avalon/es",
+      "source": "/vi/game",
+      "destination": "/vi/avalon/game",
       "permanent": true
     },
     {
-      "source": "/es/:path*",
-      "destination": "/avalon/es/:path*",
+      "source": "/vi/rules",
+      "destination": "/vi/avalon/rules",
       "permanent": true
     },
     {
-      "source": "/zh-CN",
-      "destination": "/avalon/zh-CN",
+      "source": "/avalon/vi",
+      "destination": "/vi/avalon",
       "permanent": true
     },
     {
-      "source": "/zh-CN/:path*",
-      "destination": "/avalon/zh-CN/:path*",
+      "source": "/avalon/vi/:path*",
+      "destination": "/vi/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/pt/game",
+      "destination": "/pt/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/pt/rules",
+      "destination": "/pt/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/pt",
+      "destination": "/pt/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/pt/:path*",
+      "destination": "/pt/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/it/game",
+      "destination": "/it/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/it/rules",
+      "destination": "/it/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/it",
+      "destination": "/it/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/it/:path*",
+      "destination": "/it/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/nl/game",
+      "destination": "/nl/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/nl/rules",
+      "destination": "/nl/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/nl",
+      "destination": "/nl/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/nl/:path*",
+      "destination": "/nl/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/cs/game",
+      "destination": "/cs/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/cs/rules",
+      "destination": "/cs/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/cs",
+      "destination": "/cs/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/cs/:path*",
+      "destination": "/cs/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/sv/game",
+      "destination": "/sv/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/sv/rules",
+      "destination": "/sv/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/sv",
+      "destination": "/sv/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/sv/:path*",
+      "destination": "/sv/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/th/game",
+      "destination": "/th/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/th/rules",
+      "destination": "/th/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/th",
+      "destination": "/th/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/th/:path*",
+      "destination": "/th/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/id/game",
+      "destination": "/id/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/id/rules",
+      "destination": "/id/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/id",
+      "destination": "/id/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/id/:path*",
+      "destination": "/id/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/es/game",
+      "destination": "/es/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/es/rules",
+      "destination": "/es/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/es",
+      "destination": "/es/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/es/:path*",
+      "destination": "/es/avalon/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/zh-CN/game",
+      "destination": "/zh-CN/avalon/game",
+      "permanent": true
+    },
+    {
+      "source": "/zh-CN/rules",
+      "destination": "/zh-CN/avalon/rules",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/zh-CN",
+      "destination": "/zh-CN/avalon",
+      "permanent": true
+    },
+    {
+      "source": "/avalon/zh-CN/:path*",
+      "destination": "/zh-CN/avalon/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
     {
-      "source": "/avalon",
+      "source": "/zh-TW",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh-TW/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh-TW/avalon",
       "destination": "/avalon/index.html"
     },
     {
-      "source": "/avalon/:path*",
+      "source": "/zh-TW/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/en/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/en/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/en/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/de",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/de/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/de/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/de/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/fr",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fr/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fr/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/fr/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ja",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ja/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ja/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ja/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ko",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ko/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ko/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ko/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/pl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pl/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pl/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/pl/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ru",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ru/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ru/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/ru/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/vi",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/vi/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/vi/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/vi/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/pt",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pt/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pt/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/pt/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/it",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/it/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/it/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/it/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/nl",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/nl/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/nl/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/nl/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/cs",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/cs/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/cs/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/cs/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/sv",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sv/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sv/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/sv/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/th",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/th/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/th/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/th/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/id",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/id/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/id/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/id/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/es",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/es/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/es/avalon/:path*",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/zh-CN",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh-CN/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/zh-CN/avalon",
+      "destination": "/avalon/index.html"
+    },
+    {
+      "source": "/zh-CN/avalon/:path*",
       "destination": "/avalon/index.html"
     }
   ]

@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f172a" />
-    <title>Web100 | 一系列免安裝的小遊戲與實用工具</title>
-    <meta name="description" content="Web100 是一系列免安裝、免註冊、手機瀏覽器直接使用的小遊戲與實用工具，第一款作品是阿瓦隆語音主持。" />
+    <title>Web100</title>
+    <meta name="description" content="Web100 series of no-install, no-signup mini games and tools." />
     <style>
       :root {
-        /* Design tokens — 與 web100-architecture.md 第 5.2 節保持一致 */
         --color-bg: #0f172a;
         --color-bg-card: #1e293b;
         --color-text: #f1f5f9;
         --color-text-muted: #94a3b8;
         --color-accent: #6366f1;
         --color-border: #334155;
+
+        --color-bg-light: #ffffff;
+        --color-bg-card-light: #f8fafc;
+        --color-text-light: #0f172a;
+        --color-text-muted-light: #64748b;
+        --color-border-light: #e2e8f0;
 
         --font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
         --font-size-h1: 2rem;
@@ -30,9 +35,7 @@
         --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -41,28 +44,48 @@
         font-family: var(--font-family);
         font-size: var(--font-size-body);
         line-height: 1.6;
+        transition: background 0.15s ease, color 0.15s ease;
       }
 
+      body.light { background: var(--color-bg-light); color: var(--color-text-light); }
+
       header {
-        padding: var(--space-4) var(--space-3);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-2);
+        padding: var(--space-3);
         border-bottom: 1px solid var(--color-border);
       }
 
-      header h1 {
-        margin: 0 0 var(--space-1) 0;
-        font-size: var(--font-size-h1);
+      body.light header { border-bottom-color: var(--color-border-light); }
+
+      header .brand h1 { margin: 0; font-size: 1.25rem; }
+
+      .controls { display: flex; align-items: center; gap: var(--space-1); }
+
+      select, button.theme-toggle {
+        font-family: inherit;
+        font-size: 0.9rem;
+        border-radius: var(--radius);
+        border: 1px solid var(--color-border);
+        background: var(--color-bg-card);
+        color: var(--color-text);
+        padding: 0.4rem 0.75rem;
+        cursor: pointer;
       }
 
-      header p {
-        margin: 0;
-        color: var(--color-text-muted);
+      body.light select, body.light button.theme-toggle {
+        border-color: var(--color-border-light);
+        background: var(--color-bg-card-light);
+        color: var(--color-text-light);
       }
 
-      main {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: var(--space-4) var(--space-3);
-      }
+      main { max-width: 960px; margin: 0 auto; padding: var(--space-4) var(--space-3); }
+
+      .hero h2 { font-size: var(--font-size-h1); margin: 0 0 var(--space-1) 0; }
+      .hero p { margin: 0 0 var(--space-4) 0; color: var(--color-text-muted); }
+      body.light .hero p { color: var(--color-text-muted-light); }
 
       .grid {
         display: grid;
@@ -82,21 +105,17 @@
         transition: transform 0.15s ease, border-color 0.15s ease;
       }
 
-      .card:hover {
-        transform: translateY(-2px);
-        border-color: var(--color-accent);
+      body.light .card {
+        background: var(--color-bg-card-light);
+        border-color: var(--color-border-light);
+        color: var(--color-text-light);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
       }
 
-      .card h2 {
-        margin: 0 0 var(--space-1) 0;
-        font-size: var(--font-size-h2);
-      }
-
-      .card p {
-        margin: 0;
-        color: var(--color-text-muted);
-        font-size: 0.9rem;
-      }
+      .card:hover { transform: translateY(-2px); border-color: var(--color-accent); }
+      .card h3 { margin: 0 0 var(--space-1) 0; font-size: var(--font-size-h2); }
+      .card p { margin: 0; color: var(--color-text-muted); font-size: 0.9rem; }
+      body.light .card p { color: var(--color-text-muted-light); }
 
       .card .tag {
         display: inline-block;
@@ -108,43 +127,160 @@
         font-size: 0.75rem;
       }
 
-      .placeholder {
-        border-style: dashed;
-        opacity: 0.5;
-      }
+      .placeholder { border-style: dashed; opacity: 0.5; }
 
-      footer {
-        text-align: center;
-        padding: var(--space-4) var(--space-3);
-        color: var(--color-text-muted);
-        font-size: 0.85rem;
-      }
+      footer { text-align: center; padding: var(--space-4) var(--space-3); color: var(--color-text-muted); font-size: 0.85rem; }
+      body.light footer { color: var(--color-text-muted-light); }
     </style>
   </head>
   <body>
     <header>
-      <h1>Web100</h1>
-      <p>一系列免安裝、免註冊，手機瀏覽器打開就能玩的小遊戲與實用工具。</p>
+      <div class="brand"><h1>Web100</h1></div>
+      <div class="controls">
+        <select id="lang-switcher"></select>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme">🌙</button>
+      </div>
     </header>
 
     <main>
+      <div class="hero">
+        <h2 id="hero-title"></h2>
+        <p id="hero-tagline"></p>
+      </div>
+
       <div class="grid">
-        <a class="card" href="/avalon/">
-          <h2>阿瓦隆語音主持</h2>
-          <p>設定人數與角色，自動唸出主持人旁白台詞，不用自己背稿，直接開局。</p>
-          <span class="tag">聚會遊戲</span>
+        <a class="card" id="avalon-card" href="#">
+          <h3 id="avalon-title"></h3>
+          <p id="avalon-desc"></p>
+          <span class="tag" id="avalon-tag"></span>
         </a>
 
         <div class="card placeholder">
-          <h2>搶答遊戲</h2>
-          <p>多人現場搶答工具，掃 QR code 加入房間即可遊玩。（開發中）</p>
-          <span class="tag">即將推出</span>
+          <h3 id="buzzer-title"></h3>
+          <p id="buzzer-desc"></p>
+          <span class="tag" id="buzzer-tag"></span>
         </div>
       </div>
     </main>
 
-    <footer>
-      &copy; 2026 Web100 Series
-    </footer>
+    <footer>&copy; 2026 Web100 Series</footer>
+
+    <script>
+      var SUPPORTED_LANGS = ['zh-TW', 'en', 'de', 'fr', 'ja', 'ko', 'pl', 'ru', 'vi', 'pt', 'it', 'nl', 'cs', 'sv', 'th', 'id', 'es', 'zh-CN'];
+      var DEFAULT_LANG = 'zh-TW';
+      var LANG_LABELS = {
+        'zh-TW': '繁體中文', en: 'English', de: 'Deutsch', fr: 'Français', ja: '日本語', ko: '한국어',
+        pl: 'Polski', ru: 'Русский', vi: 'Tiếng Việt', pt: 'Português', it: 'Italiano', nl: 'Nederlands',
+        cs: 'Čeština', sv: 'Svenska', th: 'ไทย', id: 'Bahasa Indonesia', es: 'Español', 'zh-CN': '简体中文',
+      };
+
+      var STRINGS = {
+        'zh-TW': {
+          heroTitle: '一系列免安裝、免註冊的小遊戲與工具',
+          heroTagline: '手機瀏覽器打開就能玩，不用下載 App，不用註冊帳號。',
+          avalonTitle: '阿瓦隆語音主持',
+          avalonDesc: '設定人數與角色，自動唸出主持人旁白台詞，不用自己背稿，直接開局。',
+          avalonTag: '聚會遊戲',
+          buzzerTitle: '搶答遊戲',
+          buzzerDesc: '多人現場搶答工具，掃 QR code 加入房間即可遊玩。',
+          buzzerTag: '即將推出',
+        },
+        en: {
+          heroTitle: 'No-install, no-signup mini games and tools',
+          heroTagline: 'Just open it in your phone browser — no app download, no account needed.',
+          avalonTitle: 'Avalon Voice Narrator',
+          avalonDesc: 'Set your player count and roles, and the app narrates the host script for you — no memorizing required.',
+          avalonTag: 'Party game',
+          buzzerTitle: 'Buzzer Game',
+          buzzerDesc: 'A live multiplayer buzzer tool — scan a QR code to join the room.',
+          buzzerTag: 'Coming soon',
+        },
+        ja: {
+          heroTitle: 'インストール・登録不要のミニゲーム＆ツール集',
+          heroTagline: 'スマホのブラウザで開くだけ。アプリのダウンロードも会員登録も不要です。',
+          avalonTitle: 'アヴァロン音声進行',
+          avalonDesc: '人数とロールを選ぶだけで、進行役の台本を自動で読み上げます。',
+          avalonTag: 'パーティーゲーム',
+          buzzerTitle: '早押しゲーム',
+          buzzerDesc: 'QRコードを読み取ってルームに参加する、複数人向けの早押しツール。',
+          buzzerTag: '近日公開',
+        },
+        ko: {
+          heroTitle: '설치·가입 없이 바로 즐기는 미니 게임 & 도구 모음',
+          heroTagline: '휴대폰 브라우저로 열기만 하면 끝. 앱 설치도, 회원가입도 필요 없어요.',
+          avalonTitle: '아발론 음성 진행',
+          avalonDesc: '인원수와 역할만 설정하면 진행자 대사를 자동으로 읽어줍니다.',
+          avalonTag: '파티 게임',
+          buzzerTitle: '버저 게임',
+          buzzerDesc: 'QR 코드를 스캔해서 방에 입장하는 실시간 다인용 버저 도구.',
+          buzzerTag: '출시 예정',
+        },
+      };
+
+      function getStrings(lang) { return STRINGS[lang] || STRINGS.en; }
+
+      function detectLangFromPath() {
+        var seg = window.location.pathname.split('/')[1];
+        return SUPPORTED_LANGS.indexOf(seg) !== -1 ? seg : null;
+      }
+
+      (function init() {
+        var lang = detectLangFromPath();
+
+        if (!lang) {
+          var saved = window.localStorage.getItem('web100-lang');
+          var target = SUPPORTED_LANGS.indexOf(saved) !== -1 ? saved : DEFAULT_LANG;
+          window.location.replace('/' + target + '/');
+          return;
+        }
+
+        window.localStorage.setItem('web100-lang', lang);
+        document.documentElement.lang = lang;
+
+        var s = getStrings(lang);
+        document.getElementById('hero-title').textContent = s.heroTitle;
+        document.getElementById('hero-tagline').textContent = s.heroTagline;
+        document.getElementById('avalon-title').textContent = s.avalonTitle;
+        document.getElementById('avalon-desc').textContent = s.avalonDesc;
+        document.getElementById('avalon-tag').textContent = s.avalonTag;
+        document.getElementById('avalon-card').href = '/' + lang + '/avalon/';
+        document.getElementById('buzzer-title').textContent = s.buzzerTitle;
+        document.getElementById('buzzer-desc').textContent = s.buzzerDesc;
+        document.getElementById('buzzer-tag').textContent = s.buzzerTag;
+
+        var select = document.getElementById('lang-switcher');
+        SUPPORTED_LANGS.forEach(function (code) {
+          var opt = document.createElement('option');
+          opt.value = code;
+          opt.textContent = LANG_LABELS[code];
+          if (code === lang) opt.selected = true;
+          select.appendChild(opt);
+        });
+        select.addEventListener('change', function (e) {
+          window.location.href = '/' + e.target.value + '/';
+        });
+
+        var themeBtn = document.getElementById('theme-toggle');
+        function applyTheme(theme) {
+          var resolved = theme;
+          if (theme === 'system') {
+            resolved = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+          document.body.classList.toggle('light', resolved === 'light');
+          themeBtn.textContent = resolved === 'light' ? '☀️' : '🌙';
+        }
+        var storedTheme = window.localStorage.getItem('web100-theme') || 'system';
+        applyTheme(storedTheme);
+        themeBtn.addEventListener('click', function () {
+          var current = window.localStorage.getItem('web100-theme') || 'system';
+          var resolved = current === 'system'
+            ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+            : current;
+          var next = resolved === 'light' ? 'dark' : 'light';
+          window.localStorage.setItem('web100-theme', next);
+          applyTheme(next);
+        });
+      })();
+    </script>
   </body>
 </html>

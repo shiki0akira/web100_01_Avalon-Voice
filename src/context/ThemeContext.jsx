@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useMemo, useState } from 'react';
 
-const STORAGE_KEY = 'avalon-theme';
+const STORAGE_KEY = 'web100-theme';
 
 export const ThemeContext = createContext(null);
 

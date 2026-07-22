@@ -35,7 +35,7 @@ function LangLayout() {
         <Route path="/" element={<Home />} />
         <Route path="game" element={<Game />} />
         <Route path="rules" element={<Rules />} />
-        <Route path="*" element={<Navigate to={`/${safeLang}`} replace />} />
+        <Route path="*" element={<Navigate to={`/${safeLang}/avalon`} replace />} />
       </Routes>
     </div>
   );
@@ -45,11 +45,11 @@ export default function App() {
   return (
     <ThemeProvider>
       <GameProvider>
-        <BrowserRouter basename="/avalon">
+        <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Navigate to={`/${defaultLang}`} replace />} />
-            <Route path=":lang/*" element={<LangLayout />} />
-            <Route path="*" element={<Navigate to={`/${defaultLang}`} replace />} />
+            <Route path="/" element={<Navigate to={`/${defaultLang}/avalon`} replace />} />
+            <Route path=":lang/avalon/*" element={<LangLayout />} />
+            <Route path="*" element={<Navigate to={`/${defaultLang}/avalon`} replace />} />
           </Routes>
         </BrowserRouter>
       </GameProvider>

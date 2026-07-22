@@ -84,7 +84,7 @@ export default function Home() {
         type="button"
         className={`w-full rounded-2xl px-6 py-4 font-semibold text-white ${canStart ? 'bg-indigo-600' : 'bg-indigo-400 cursor-not-allowed'}`}
         disabled={!canStart}
-        onClick={() => navigate(`/${lang}/game`, { state: { playerCount, selectedRoles } })}
+        onClick={() => navigate(`/${lang}/avalon/game`, { state: { playerCount, selectedRoles } })}
       >
         {t('home.start')}
       </button>
