@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Avalon Voice Narrator | Online The Resistance: Avalon Host Script",
-    "description": "Avalon Voice reads the host narration out loud so no one has to memorize the script. Pick your player count and roles, then start an online Avalon game instantly.",
-    "ogTitle": "Avalon Voice Narrator - Auto Host Script for The Resistance: Avalon",
-    "ogDescription": "Set your player count and roles, and Avalon Voice narrates the host script for you from start to finish."
+    "title": "Avalon Voice Narrator | Auto Host Script for The Resistance: Avalon",
+    "description": "Avalon Voice automatically reads the host script and narration out loud so no one has to memorize the lines. Pick your player count and roles, then start an online Avalon game instantly.",
+    "ogTitle": "Avalon Voice Narrator - Auto Host Script & Narration for Avalon",
+    "ogDescription": "Set your player count and roles, and Avalon Voice narrates the host script and narration for you from start to finish."
   },
   "nav": {
     "title": "Avalon Voice",
@@ -12,8 +12,8 @@
     "light": "Light"
   },
   "home": {
-    "title": "Avalon Voice",
-    "description": "Choose a player count, review the suggested roles, and adjust the setup before starting.",
+    "title": "Avalon Voice Narrator",
+    "description": "Automatically narrates the host script and narration for The Resistance: Avalon. Choose a player count, review the suggested roles, and adjust the setup before starting.",
     "playerCount": "Players",
     "recommendation": "Recommended setup",
     "good": "Good",
