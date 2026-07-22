@@ -224,17 +224,7 @@
         return SUPPORTED_LANGS.indexOf(seg) !== -1 ? seg : null;
       }
 
-      (function init() {
-        var lang = detectLangFromPath();
-
-        if (!lang) {
-          var saved = window.localStorage.getItem('web100-lang');
-          var target = SUPPORTED_LANGS.indexOf(saved) !== -1 ? saved : DEFAULT_LANG;
-          window.location.replace('/' + target + '/');
-          return;
-        }
-
-        window.localStorage.setItem('web100-lang', lang);
+      function renderForLang(lang) {
         document.documentElement.lang = lang;
 
         var s = getStrings(lang);
@@ -249,15 +239,37 @@
         document.getElementById('buzzer-tag').textContent = s.buzzerTag;
 
         var select = document.getElementById('lang-switcher');
+        select.value = lang;
+      }
+
+      (function init() {
+        var lang = detectLangFromPath();
+
+        if (!lang) {
+          var saved = window.localStorage.getItem('web100-lang');
+          var target = SUPPORTED_LANGS.indexOf(saved) !== -1 ? saved : DEFAULT_LANG;
+          window.location.replace('/' + target + '/');
+          return;
+        }
+
+        window.localStorage.setItem('web100-lang', lang);
+
+        // 語言下拉選單（選項只需建立一次）
+        var select = document.getElementById('lang-switcher');
         SUPPORTED_LANGS.forEach(function (code) {
           var opt = document.createElement('option');
           opt.value = code;
           opt.textContent = LANG_LABELS[code];
-          if (code === lang) opt.selected = true;
           select.appendChild(opt);
         });
+
+        renderForLang(lang);
+
         select.addEventListener('change', function (e) {
-          window.location.href = '/' + e.target.value + '/';
+          var nextLang = e.target.value;
+          window.localStorage.setItem('web100-lang', nextLang);
+          window.history.pushState({}, '', '/' + nextLang + '/');
+          renderForLang(nextLang);
         });
 
         var themeBtn = document.getElementById('theme-toggle');
