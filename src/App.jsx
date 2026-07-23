@@ -26,6 +26,14 @@ function LangLayout() {
     }
     document.documentElement.lang = safeLang;
     applySeo(safeLang, location.pathname);
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: location.pathname,
+      });
+    }
   }, [i18n, lang, location.pathname, navigate, safeLang]);
 
   return (

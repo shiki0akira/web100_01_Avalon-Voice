@@ -2,6 +2,11 @@
   "version": 2,
   "redirects": [
     {
+      "source": "/",
+      "destination": "/zh-TW/",
+      "permanent": false
+    },
+    {
       "source": "/zh-TW/game",
       "destination": "/zh-TW/avalon/game",
       "permanent": true

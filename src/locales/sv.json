@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Avalon-Underröstning",
-    "description": "Ställ in Avalon och starta den talade guiden.",
-    "ogTitle": "Avalon-Underröstning",
-    "ogDescription": "Ställ in Avalon och starta den talade guiden."
+    "title": "Avalon röstberättare | Automatiskt spelledarmanus och berättarröst",
+    "description": "Avalon röstberättare läser automatiskt upp spelledarens manus och berättartext, så ingen behöver lära sig något utantill. Ställ in antal spelare och roller och starta spelet direkt.",
+    "ogTitle": "Avalon röstberättare - Automatiskt manus och berättarröst",
+    "ogDescription": "Ställ in antal spelare och roller, så guidar Avalon röstberättare dig genom hela spelet."
   },
   "nav": {
     "title": "Avalon-Underröstning",

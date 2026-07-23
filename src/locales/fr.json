@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Narration Avalon",
-    "description": "Configurez Avalon et lancez une introduction vocale.",
-    "ogTitle": "Narration Avalon",
-    "ogDescription": "Configurez Avalon et lancez une introduction vocale."
+    "title": "Narrateur vocal Avalon | Générateur automatique de texte d'animateur et narration",
+    "description": "Le narrateur vocal Avalon lit automatiquement à voix haute le texte de l'animateur et la narration, sans besoin d'apprendre son texte par cœur. Choisissez le nombre de joueurs et les rôles, puis lancez la partie immédiatement.",
+    "ogTitle": "Narrateur vocal Avalon - Texte d'animateur et narration automatiques",
+    "ogDescription": "Réglez le nombre de joueurs et les rôles, et le narrateur vocal Avalon lit le texte de l'animateur du début à la fin."
   },
   "nav": {
     "title": "Narration Avalon",

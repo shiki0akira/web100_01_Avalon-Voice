@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Narrazione Avalon",
-    "description": "Configura Avalon e avvia la guida vocale.",
-    "ogTitle": "Narrazione Avalon",
-    "ogDescription": "Configura Avalon e avvia la guida vocale."
+    "title": "Narratore vocale di Avalon | Copione del narratore e narrazione automatici",
+    "description": "Il narratore vocale di Avalon legge automaticamente ad alta voce il copione dell'host e la narrazione, senza bisogno di imparare le battute a memoria. Scegli il numero di giocatori e i ruoli e inizia subito la partita.",
+    "ogTitle": "Narratore vocale di Avalon - Copione e narrazione automatici",
+    "ogDescription": "Imposta il numero di giocatori e i ruoli: il narratore vocale di Avalon legge il copione dell'host dall'inizio alla fine."
   },
   "nav": {
     "title": "Narrazione Avalon",

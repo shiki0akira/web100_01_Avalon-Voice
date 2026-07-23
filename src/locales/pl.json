@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Narracja Avalonu",
-    "description": "Konfiguruj Avalona i uruchom prowadzenie głosowe.",
-    "ogTitle": "Narracja Avalonu",
-    "ogDescription": "Konfiguruj Avalona i uruchom prowadzenie głosowe."
+    "title": "Głosowy narrator Avalon | Automatyczny scenariusz prowadzącego i narracja",
+    "description": "Głosowy narrator Avalon automatycznie odczytuje scenariusz prowadzącego i narrację, więc nikt nie musi uczyć się kwestii na pamięć. Ustaw liczbę graczy i role, a grę rozpoczniesz od razu.",
+    "ogTitle": "Głosowy narrator Avalon - Automatyczny scenariusz i narracja",
+    "ogDescription": "Ustaw liczbę graczy i role, a głosowy narrator Avalon poprowadzi rozgrywkę od początku do końca."
   },
   "nav": {
     "title": "Narracja Avalonu",

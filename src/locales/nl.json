@@ -1,9 +1,9 @@
 {
   "seo": {
-    "title": "Avalon-Vertelling",
-    "description": "Stel Avalon in en start de gesproken gids.",
-    "ogTitle": "Avalon-Vertelling",
-    "ogDescription": "Stel Avalon in en start de gesproken gids."
+    "title": "Avalon Stemverteller | Automatisch spelleidersscript en verteltekst",
+    "description": "De Avalon stemverteller leest automatisch het spelleidersscript en de verteltekst voor, zodat niemand iets uit het hoofd hoeft te leren. Kies het aantal spelers en de rollen en begin direct een spel.",
+    "ogTitle": "Avalon Stemverteller - Automatisch script en verteltekst",
+    "ogDescription": "Stel het aantal spelers en de rollen in, en de Avalon stemverteller begeleidt je van begin tot eind."
   },
   "nav": {
     "title": "Avalon-Vertelling",
