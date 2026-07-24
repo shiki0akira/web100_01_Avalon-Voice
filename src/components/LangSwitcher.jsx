@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import { localeLabels, supportedLangs } from '../i18n';
+import { gameSlug, getPathSuffix, localeLabels, persistLangPreference, supportedLangs } from '../i18n';
 
 export default function LangSwitcher() {
   const { lang } = useParams();
@@ -13,8 +13,9 @@ export default function LangSwitcher() {
       value={lang}
       onChange={(e) => {
         const nextLang = e.target.value;
-        const rest = location.pathname.replace(/^\/[a-zA-Z-]+/, '') || '/';
-        navigate(`/${nextLang}${rest}`, { replace: true });
+        const suffix = getPathSuffix(location.pathname);
+        persistLangPreference(nextLang); // 記住使用者手動選的語言，優先權高於 IP 地區猜測
+        navigate(`/${gameSlug}/${nextLang}${suffix}`, { replace: true });
       }}
     >
       {supportedLangs.map((code) => (

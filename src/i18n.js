@@ -22,6 +22,11 @@ import zhCN from './locales/zh-CN.json';
 export const supportedLangs = ['zh-TW', 'en', 'de', 'fr', 'ja', 'ko', 'pl', 'ru', 'vi', 'pt', 'it', 'nl', 'cs', 'sv', 'th', 'id', 'es', 'zh-CN'];
 export const defaultLang = 'zh-TW';
 
+// 這個專案在網域底下的固定路徑前綴。網址結構固定為 /avalon/{lang}/...
+// （遊戲名稱在前、語言在後），這樣未來 Cloudflare Worker 的路由總機
+// 只要看路徑第一段是不是已知的遊戲代碼就能決定轉發去哪，不用管語言有幾種。
+export const gameSlug = 'avalon';
+
 export const localeLabels = {
   'zh-TW': '繁體中文',
   en: 'English',
@@ -79,12 +84,26 @@ export function normalizeLang(lang) {
   return supportedLangs.includes(lang) ? lang : defaultLang;
 }
 
-export function getPathWithoutLang(pathname) {
-  return pathname.replace(/^\/(?:zh-TW|en|de|fr|ja|ko|pl|ru|vi|pt|it|nl|cs|sv|th|id|es|zh-CN)(?=\/|$)/, '') || '/';
+// 網域共用的語言 cookie：使用者手動切換語言時寫入，
+// 之後 Cloudflare Worker 判斷語言時，這個 cookie 的優先權 > IP 地區猜測。
+// path=/ 讓網域下所有專案（包含首頁、其他遊戲）都能讀到同一個 cookie。
+const LANG_COOKIE_NAME = 'web100_lang';
+
+export function persistLangPreference(lang) {
+  if (typeof document === 'undefined') return;
+  const oneYear = 60 * 60 * 24 * 365;
+  document.cookie = `${LANG_COOKIE_NAME}=${lang}; path=/; max-age=${oneYear}; SameSite=Lax`;
+}
+
+export function getPathSuffix(pathname) {
+  // 從 /avalon/{lang}/xxx 中移除 /avalon/{lang} 前綴，回傳 /xxx（沒有子路徑時回傳空字串）
+  const langPattern = supportedLangs.join('|');
+  const re = new RegExp(`^/${gameSlug}/(?:${langPattern})(?=/|$)`);
+  return pathname.replace(re, '');
 }
 
 export function buildCanonical(lang, pathname) {
-  return `${window.location.origin}/${lang}${getPathWithoutLang(pathname)}`.replace(/\/$/, '');
+  return `${window.location.origin}/${gameSlug}/${lang}${getPathSuffix(pathname)}`.replace(/\/$/, '');
 }
 
 export function applySeo(lang, pathname) {
@@ -132,7 +151,7 @@ export function applySeo(lang, pathname) {
       link.rel = 'alternate';
       link.hreflang = code;
       return link;
-    }).href = `${window.location.origin}/${code}${getPathWithoutLang(pathname)}`.replace(/\/$/, '');
+    }).href = `${window.location.origin}/${gameSlug}/${code}${getPathSuffix(pathname)}`.replace(/\/$/, '');
   });
 }
 

@@ -3,7 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate, usePa
 import { useTranslation } from 'react-i18next';
 import { ThemeProvider } from './context/ThemeContext';
 import { GameProvider } from './context/GameContext';
-import { applySeo, defaultLang, getPathWithoutLang, normalizeLang, supportedLangs } from './i18n';
+import { applySeo, defaultLang, gameSlug, getPathSuffix, normalizeLang, supportedLangs } from './i18n';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Game from './pages/Game';
@@ -18,7 +18,7 @@ function LangLayout() {
 
   useEffect(() => {
     if (safeLang !== lang) {
-      navigate(`/${defaultLang}${getPathWithoutLang(location.pathname)}`, { replace: true });
+      navigate(`/${gameSlug}/${defaultLang}${getPathSuffix(location.pathname)}`, { replace: true });
       return;
     }
     if (i18n.language !== safeLang) {
@@ -43,7 +43,7 @@ function LangLayout() {
         <Route path="/" element={<Home />} />
         <Route path="game" element={<Game />} />
         <Route path="rules" element={<Rules />} />
-        <Route path="*" element={<Navigate to={`/${safeLang}/avalon`} replace />} />
+        <Route path="*" element={<Navigate to={`/${gameSlug}/${safeLang}`} replace />} />
       </Routes>
     </div>
   );
@@ -55,9 +55,9 @@ export default function App() {
       <GameProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Navigate to={`/${defaultLang}/avalon`} replace />} />
-            <Route path=":lang/avalon/*" element={<LangLayout />} />
-            <Route path="*" element={<Navigate to={`/${defaultLang}/avalon`} replace />} />
+            <Route path="/" element={<Navigate to={`/${gameSlug}/${defaultLang}`} replace />} />
+            <Route path={`${gameSlug}/:lang/*`} element={<LangLayout />} />
+            <Route path="*" element={<Navigate to={`/${gameSlug}/${defaultLang}`} replace />} />
           </Routes>
         </BrowserRouter>
       </GameProvider>
