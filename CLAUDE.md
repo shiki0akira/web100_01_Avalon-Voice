@@ -1,0 +1,33 @@
+# web100_01_Avalon-Voice
+
+阿瓦隆桌遊的語音主持工具，Web100 系列第一個專案。這個 repo **只負責阿瓦隆語音本身**，不含首頁（首頁在獨立的 `web100_00_Homepage` repo）。
+
+## 整體架構
+
+完整架構規劃見 `web100_00_Homepage` repo 裡的 `ARCHITECTURE.md`（子路徑策略、Cloudflare Worker 路由總機、repo 命名慣例、共用 design tokens）。這裡只記錄跟這個專案直接相關的事。
+
+## 網址結構
+
+`/avalon/{lang}/...`，遊戲代號在前、語言在後（例如 `/avalon/zh-TW/game`）。這個順序是全系列的規則，不要改回語言在前。
+
+- 18 種語言，代碼定義在 `src/i18n.js` 的 `supportedLangs`
+- 語言驗證/normalize、canonical、hreflang 都靠 `src/i18n.js` 裡的工具函式，改路由前先看這支檔案
+
+## 部署
+
+- Vercel 專案，綁 `web100-01-avalon-voice.vercel.app`
+- `vercel.json` 用正規表示式 `:lang(zh-TW|en|...)` 限定語言代碼，不要改回一條條列舉語言（維護成本太高）
+- 目前透過 `web100_00_Homepage` 的 `vercel.json` rewrite 暫時代理接到正式網域 `www.vibeweb100.com/avalon/*`，之後會改由 Cloudflare Worker 接管
+
+## SEO / GA4 現況
+
+- GA4 測量 ID：`G-S7PE5687BG`，裝在 `index.html`，`send_page_view: false`，改由 `src/App.jsx` 的 `LangLayout` 在路由/語言切換時手動送出 `page_view`（SPA 路由變化不會自動觸發，這是特別處理過的部分，不要移除）
+- 語言切換時會寫入 `web100_lang` cookie（`persistLangPreference`，在 `src/i18n.js`），這是給未來 Cloudflare Worker 判斷語言優先權用的，全站共用，不要改 cookie 名稱
+- 各語言的 SEO title/description 在 `src/locales/{lang}.json` 的 `seo` 欄位，zh-TW/en/ja/ko/zh-CN 已經有做關鍵字優化，其餘語言是基本翻譯
+
+## 常見任務起手式
+
+- 改 UI/文案：看 `src/pages/`、`src/components/`
+- 改語言相關邏輯：先看 `src/i18n.js`
+- 改路由結構：`src/App.jsx`，記得网址順序是 avalon 在前
+- 改建置流程：`scripts/postbuild.js`（把 build 結果搬進 `dist/avalon/`）、`vite.config.js`（`base: '/avalon/'`）
